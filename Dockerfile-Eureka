@@ -1,0 +1,6 @@
+FROM alpine-jdk:base
+LABEL maintainer="wevaldivieso@gmail.com"
+COPY microEurekaAutomotriz-0.0.1-SNAPSHOT.jar /opt/lib/microEurekaAutomotriz.jar
+ENTRYPOINT ["/usr/bin/java"]
+CMD ["-jar", "/opt/lib/microEurekaAutomotriz.jar"]
+EXPOSE 8761
